@@ -1,7 +1,7 @@
 export default [{
     id: '1',
     name: 'Viktor',
-    tagline: 'Mr. President',
+    tagline: 'Software Guy',
     image: require('../../assets/models/Viktor/Model.jpg'),
 }, {
     id: '2',

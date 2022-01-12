@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import StyledButton from "../StyledButton";
 import styles from './styles';
-import { Audio } from 'expo-av';
+import * as Calendar from 'expo-calendar';
 
 const PersonItem = (props) => {
 
@@ -23,21 +23,11 @@ const PersonItem = (props) => {
 
             <View style={styles.buttonsContainer}>
                 <StyledButton
+
                     type="secondary"
                     content={"Alarm!"}
                     onPress={async () => {
-
-
-                        try {
-
-                            const { sound: soundObject, status } = await Audio.Sound.createAsync(
-                                require('./audio_file.m4a'),
-                                { shouldPlay: true }
-                            );
-                            // Your sound is playing!
-                        } catch (error) {
-                            console.warn(error)
-                        }
+                        console.warn("nicenpm")
 
                     }}
                 />
